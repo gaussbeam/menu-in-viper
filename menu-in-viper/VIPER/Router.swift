@@ -8,6 +8,7 @@
 import UIKit
 
 protocol Wireframe {
+    func showActionSheet(handler: @escaping (String) -> Void)
 }
 
 struct Router: Wireframe {
@@ -29,5 +30,17 @@ struct Router: Wireframe {
         vc.inject(presenter)
         
         return vc
+    }
+    
+    func showActionSheet(handler: @escaping (String) -> Void) {
+        let actionSheet = UIAlertController(title: "ActionSheet Sample", message: nil, preferredStyle: .actionSheet)
+        let actionHandler: (UIAlertAction) -> Void = { action in
+            handler("\(action.title!) in actionsheet tapped")
+        }
+        
+        actionSheet.addAction(UIAlertAction(title: "destructive action", style: .destructive, handler: actionHandler))
+        actionSheet.addAction(UIAlertAction(title: "default action", style: .default, handler: actionHandler))
+        
+        viewController?.present(actionSheet, animated: true)
     }
 }

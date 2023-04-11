@@ -12,6 +12,7 @@ protocol View: AnyObject {
 
 protocol Presentation {
     func viewDidLoad()
+    func showActionSheetButtonDidTap()
     var labelString: String { get }
     var buttonMenu: MenuViewData { get }
 }
@@ -30,6 +31,12 @@ final class Presenter: Presentation {
     
     func viewDidLoad() {
         updateLabel(string: "hello world")
+    }
+    
+    func showActionSheetButtonDidTap() {
+        wireframe.showActionSheet() { [weak self] string in
+            self?.updateLabel(string: string)
+        }
     }
     
     var buttonMenu: MenuViewData {

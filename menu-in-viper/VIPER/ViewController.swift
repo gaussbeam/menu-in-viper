@@ -19,6 +19,10 @@ final class ViewController: UIViewController {
         showMenuButton.showsMenuAsPrimaryAction = true
         presenter.viewDidLoad()
     }
+    
+    @IBAction func showActionSheetButtonDidTap(_ sender: UIButton) {
+        presenter.showActionSheetButtonDidTap()
+    }
 }
 
 // MARK: View
