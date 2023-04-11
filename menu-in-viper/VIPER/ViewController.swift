@@ -12,11 +12,16 @@ final class ViewController: UIViewController {
 
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var showMenuButton: UIButton!
+    @IBOutlet weak var showMenuWithStateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         showMenuButton.menu = presenter.buttonMenu.toUIMenu()
         showMenuButton.showsMenuAsPrimaryAction = true
+
+        showMenuWithStateButton.menu = presenter.buttonMenuWithState.toUIMenu()
+        showMenuWithStateButton.showsMenuAsPrimaryAction = true
+
         presenter.viewDidLoad()
     }
     
@@ -34,6 +39,10 @@ extension ViewController: View {
     
     func viewDataDidUpdate() {
         self.textLabel.text = presenter.labelString
+    }
+    
+    func menuWithStateViewDataDidUpdate() {
+        self.showMenuWithStateButton.menu = presenter.buttonMenuWithState.toUIMenu()
     }
 }
 

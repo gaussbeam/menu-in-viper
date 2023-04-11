@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="ihW-WJ-BrW">
-                                <rect key="frame" x="20" y="345.66666666666669" width="353" height="161"/>
+                                <rect key="frame" x="20" y="310.33333333333331" width="353" height="231.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXu-8C-nmf">
                                         <rect key="frame" x="156" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
@@ -26,14 +26,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfj-4M-wNL">
-                                        <rect key="frame" x="120" y="56.333333333333314" width="113" height="34.333333333333343"/>
+                                        <rect key="frame" x="120" y="56.333333333333371" width="113" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show menu">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
                                         </buttonConfiguration>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez3-AW-B3c">
+                                        <rect key="frame" x="74.666666666666671" y="126.66666666666667" width="203.66666666666663" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Show menu (with state)"/>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txk-6I-5gi">
-                                        <rect key="frame" x="96.666666666666671" y="126.66666666666661" width="159.66666666666663" height="34.333333333333329"/>
+                                        <rect key="frame" x="96.666666666666671" y="197" width="159.66666666666663" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Show actionsheet"/>
                                         <connections>
@@ -53,6 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="showMenuButton" destination="Jfj-4M-wNL" id="e9r-FG-4N3"/>
+                        <outlet property="showMenuWithStateButton" destination="Ez3-AW-B3c" id="zJz-SQ-8uN"/>
                         <outlet property="textLabel" destination="XXu-8C-nmf" id="bOT-Rs-FVM"/>
                     </connections>
                 </viewController>
