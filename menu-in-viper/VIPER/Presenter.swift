@@ -7,6 +7,7 @@
 
 protocol View: AnyObject {
     func inject(_ presenter: Presentation)
+    func viewDataDidUpdate()
 }
 
 protocol Presentation {

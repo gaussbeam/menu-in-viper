@@ -10,8 +10,13 @@ import UIKit
 final class ViewController: UIViewController {
     private var presenter: Presentation!
 
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var showMenuButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        showMenuButton.menu = presenter.buttonMenu.toUIMenu()
+        showMenuButton.showsMenuAsPrimaryAction = true
         presenter.viewDidLoad()
     }
 }
@@ -21,6 +26,10 @@ final class ViewController: UIViewController {
 extension ViewController: View {
     func inject(_ presenter: Presentation) {
         self.presenter = presenter
+    }
+    
+    func viewDataDidUpdate() {
+        self.textLabel.text = presenter.labelString
     }
 }
 
