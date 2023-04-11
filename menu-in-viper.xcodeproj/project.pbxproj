@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E63F2E3529E4EB440048CAC9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F2E3429E4EB440048CAC9 /* Presenter.swift */; };
 		E63F2E3729E4ECD90048CAC9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F2E3629E4ECD90048CAC9 /* Router.swift */; };
+		E63F2E3B29E4F3830048CAC9 /* MenuViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F2E3A29E4F3830048CAC9 /* MenuViewData.swift */; };
+		E63F2E3D29E4F3CC0048CAC9 /* ActionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F2E3C29E4F3CC0048CAC9 /* ActionViewData.swift */; };
 		E66EFE4B29E02353000284FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66EFE4A29E02353000284FF /* AppDelegate.swift */; };
 		E66EFE4D29E02353000284FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66EFE4C29E02353000284FF /* SceneDelegate.swift */; };
 		E66EFE4F29E02353000284FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66EFE4E29E02353000284FF /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		E63F2E3429E4EB440048CAC9 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		E63F2E3629E4ECD90048CAC9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E63F2E3A29E4F3830048CAC9 /* MenuViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewData.swift; sourceTree = "<group>"; };
+		E63F2E3C29E4F3CC0048CAC9 /* ActionViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewData.swift; sourceTree = "<group>"; };
 		E66EFE4729E02353000284FF /* menu-in-viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "menu-in-viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66EFE4A29E02353000284FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E66EFE4C29E02353000284FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 			path = VIPER;
 			sourceTree = "<group>";
 		};
+		E63F2E3929E4F30E0048CAC9 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E63F2E3A29E4F3830048CAC9 /* MenuViewData.swift */,
+				E63F2E3C29E4F3CC0048CAC9 /* ActionViewData.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		E66EFE3E29E02353000284FF = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +86,7 @@
 				E66EFE4A29E02353000284FF /* AppDelegate.swift */,
 				E66EFE4C29E02353000284FF /* SceneDelegate.swift */,
 				E63F2E3829E4F2B20048CAC9 /* VIPER */,
+				E63F2E3929E4F30E0048CAC9 /* Menu */,
 				E66EFE5029E02353000284FF /* Main.storyboard */,
 				E66EFE5329E02354000284FF /* Assets.xcassets */,
 				E66EFE5529E02354000284FF /* LaunchScreen.storyboard */,
@@ -153,10 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63F2E3729E4ECD90048CAC9 /* Router.swift in Sources */,
+				E63F2E3D29E4F3CC0048CAC9 /* ActionViewData.swift in Sources */,
 				E66EFE4F29E02353000284FF /* ViewController.swift in Sources */,
 				E66EFE4B29E02353000284FF /* AppDelegate.swift in Sources */,
 				E63F2E3529E4EB440048CAC9 /* Presenter.swift in Sources */,
 				E66EFE4D29E02353000284FF /* SceneDelegate.swift in Sources */,
+				E63F2E3B29E4F3830048CAC9 /* MenuViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
