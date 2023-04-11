@@ -11,12 +11,16 @@ protocol View: AnyObject {
 
 protocol Presentation {
     func viewDidLoad()
+    var labelString: String { get }
+    var buttonMenu: MenuViewData { get }
 }
 
 final class Presenter: Presentation {
     private weak var view: View?
     private let wireframe: Wireframe
 
+    private(set) var labelString: String = ""
+    
     init(view: View,
          wireframe: Wireframe) {
         self.view = view
@@ -24,7 +28,25 @@ final class Presenter: Presentation {
     }
     
     func viewDidLoad() {
-        print("hello world")
-        // Do something
+        updateLabel(string: "hello world")
+    }
+    
+    var buttonMenu: MenuViewData {
+        let handler: ActionViewData.Handler = { [weak self] action in
+            let string = "\(action.title) tapped"
+            self?.updateLabel(string: string)
+        }
+        
+        let defaultAction = ActionViewData(title: "default action", handler: handler)
+        let destructiveAction = ActionViewData(title: "destructive action", isDestructive: true, handler: handler)
+            
+        let actions = [defaultAction, destructiveAction]
+
+        return MenuViewData(actions, title: "Menu sample")!
+    }
+    
+    private func updateLabel(string: String) {
+        labelString = string
+        view?.viewDataDidUpdate()
     }
 }
