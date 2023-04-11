@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E63F2E3529E4EB440048CAC9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F2E3429E4EB440048CAC9 /* Presenter.swift */; };
-		E63F2E3729E4ECD90048CAC9 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F2E3629E4ECD90048CAC9 /* Wireframe.swift */; };
+		E63F2E3729E4ECD90048CAC9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F2E3629E4ECD90048CAC9 /* Router.swift */; };
 		E66EFE4B29E02353000284FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66EFE4A29E02353000284FF /* AppDelegate.swift */; };
 		E66EFE4D29E02353000284FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66EFE4C29E02353000284FF /* SceneDelegate.swift */; };
 		E66EFE4F29E02353000284FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66EFE4E29E02353000284FF /* ViewController.swift */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		E63F2E3429E4EB440048CAC9 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		E63F2E3629E4ECD90048CAC9 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		E63F2E3629E4ECD90048CAC9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E66EFE4729E02353000284FF /* menu-in-viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "menu-in-viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66EFE4A29E02353000284FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E66EFE4C29E02353000284FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				E66EFE4C29E02353000284FF /* SceneDelegate.swift */,
 				E66EFE4E29E02353000284FF /* ViewController.swift */,
 				E63F2E3429E4EB440048CAC9 /* Presenter.swift */,
-				E63F2E3629E4ECD90048CAC9 /* Wireframe.swift */,
+				E63F2E3629E4ECD90048CAC9 /* Router.swift */,
 				E66EFE5029E02353000284FF /* Main.storyboard */,
 				E66EFE5329E02354000284FF /* Assets.xcassets */,
 				E66EFE5529E02354000284FF /* LaunchScreen.storyboard */,
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E63F2E3729E4ECD90048CAC9 /* Wireframe.swift in Sources */,
+				E63F2E3729E4ECD90048CAC9 /* Router.swift in Sources */,
 				E66EFE4F29E02353000284FF /* ViewController.swift in Sources */,
 				E66EFE4B29E02353000284FF /* AppDelegate.swift in Sources */,
 				E63F2E3529E4EB440048CAC9 /* Presenter.swift in Sources */,
