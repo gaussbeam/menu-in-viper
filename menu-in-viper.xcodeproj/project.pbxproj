@@ -41,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E63F2E3829E4F2B20048CAC9 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				E66EFE4E29E02353000284FF /* ViewController.swift */,
+				E63F2E3429E4EB440048CAC9 /* Presenter.swift */,
+				E63F2E3629E4ECD90048CAC9 /* Router.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
 		E66EFE3E29E02353000284FF = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +72,7 @@
 			children = (
 				E66EFE4A29E02353000284FF /* AppDelegate.swift */,
 				E66EFE4C29E02353000284FF /* SceneDelegate.swift */,
-				E66EFE4E29E02353000284FF /* ViewController.swift */,
-				E63F2E3429E4EB440048CAC9 /* Presenter.swift */,
-				E63F2E3629E4ECD90048CAC9 /* Router.swift */,
+				E63F2E3829E4F2B20048CAC9 /* VIPER */,
 				E66EFE5029E02353000284FF /* Main.storyboard */,
 				E66EFE5329E02354000284FF /* Assets.xcassets */,
 				E66EFE5529E02354000284FF /* LaunchScreen.storyboard */,
